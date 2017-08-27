@@ -1,4 +1,6 @@
 class Endpoint < ActiveRecord::Base
+  has_many :requests
+
   validates_presence_of :signature
 
   before_validation :generate_signature
