@@ -1,0 +1,9 @@
+<h1>Requests made to <%= @endpoint.signature %></h1>
+<h4><%= pluralize(@endpoint.requests.count, 'request') %></h4>
+
+<% @endpoint.requests.each do |request| %>
+  <hr>
+  <p>
+    <%= request.information %>
+  </p>
+<% end %>

@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  resources :endpoints, param: :signature
+  namespace :api do
+    resources :endpoints, param: :signature
+  end
 end

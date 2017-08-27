@@ -1,0 +1,14 @@
+<h1>Endpoints:</h1>
+
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Signature</th>
+  </tr>
+  <% @endpoints.each do |endpoint| %>
+    <tr>
+      <td><%= endpoint.id %></td>
+      <td><%= link_to endpoint.signature, api_endpoint_path(endpoint.signature) %></td>
+    </tr>
+  <% end %>
+</table>
