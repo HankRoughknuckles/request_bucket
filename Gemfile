@@ -20,5 +20,6 @@ end
 group :development, :test do
   gem 'byebug', '~> 9.0.3'
   gem 'spring'
+  gem 'spring-commands-rspec'
   gem 'rspec-rails'
 end
